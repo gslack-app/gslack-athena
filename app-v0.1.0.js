@@ -2391,7 +2391,7 @@ var app = function(e) {
             return s;
         })), function(e) {
             e.MenuItemAuthorize = "Authorize", e.MenuItemInitSettings = "Init Settings", e.AuthorizationFailed = "Authorization Failed", 
-            e.AuthorizationSuccess = "Authorization Success", e.SettingAppName = "GSlack", e.MsgConfigSettings = "Please configure the initialized settings", 
+            e.AuthorizationSuccess = "Authorization Success", e.SettingAppName = "Athena", e.MsgConfigSettings = "Please configure the initialized settings", 
             e.FormCallbackId = "athena_translate", e.FormTitleField = "Translate Text", e.FormFromField = "From", 
             e.FormToField = "To", e.FormTextField = "Text", e.FormTranslateButton = "Translate", 
             e.FormCloseButton = "Close";
