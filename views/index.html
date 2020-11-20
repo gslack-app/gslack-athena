@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <?!= css(['views/app']); ?>
+</head>
+
+<body>
+    <?!= html(['views/header']); ?>
+    <div class="wrapper">
+        <div class="hero">
+            <h1>I am a bot.</h1>
+            <a href="<?= ScriptApp.getService().getUrl() ?>?url=/slack/login" target="_top"><img alt="Add to Slack"
+                    height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png"
+                    srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+        </div>
+    </div>
+    <?!= html(['views/footer']); ?>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        function generateSlackLink() {
+            var url = 'slack://user?team=<?= team ?>&id=<?= bot ?>';
+            $('#slack_link').attr('href', url);
+        }
+
+        $(function () {
+            generateSlackLink();
+        });
+    </script>
+    <?!= css(['views/app']); ?>
+</head>
+
+<body>
+    <?!= html(['views/header']); ?>
+    <div class="wrapper">
+        <div>
+            <h1>Success! <a href="slack://open" id="slack_link">Your new bot is waiting!</a></h1>
+        </div>
+    </div>
+    <?!= html(['views/footer']); ?>
+</body>
+
+</html>

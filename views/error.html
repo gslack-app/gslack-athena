@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_top">
+    <?!= css(['views/app']); ?>
+</head>
+
+<body>
+    <?!= html(['views/header']); ?>
+    <div class="wrapper">
+        <div>
+            <h1>Oops! Something went awry during your login.</h1>
+            <p><a href="<?= ScriptApp.getService().getUrl() ?>?url=/slack/login" target="_top">Login again</a></p>
+        </div>
+    </div>
+    <?!= html(['views/footer']); ?>
+</body>
+
+</html>
